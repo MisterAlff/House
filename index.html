@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#0" class="header_logo">
+      <img src="./images/logo.png" alt="Логотип компании">
+    </a> 
+    <nav class="header_menu">
+      <ul class="header_menu-list">
+        <li class="header_menu-item">
+          <a href="#0" class="header_menu-link">Репродукции</a>
+        </li>
+        <li class="header_menu-item">
+          <a href="#0" class="header_menu-link">Новинки</a>
+        </li>
+        <li class="header_menu-item">
+          <a href="#0" class="header_menu-link">О нас</a>
+        </li>
+        <li class="header_menu-item">
+          <a href="#0" class="header_menu-link">
+            <img src="./images/shopping-cart.png" alt="Корзина для покупок">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="./images/Layer 0 1.png" alt="Птица на ветке" class="hero_bird-picture">
+      <div class="hero_discription">
+        <h1 class="hero_discription-title">Реплики картин от <span class="accent_color">Ink. House</span></h1>
+        <p class="hero_discription-text">
+          Высокое качество отрисовки на плотной бумаге или 
+          льняном холсте. Редкие произведения, доступные цены.
+        </p>
+        <button class="button hero_discription-button" type="button">Продукция</button>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog_title">
+        <h2 class="catalog_text">Репродукции</h2>
+        <!-- <nav class="catalog_menu"> -->
+          <input class="visually-hidden" checked value="" type="radio" id="btn_france" name="cat_but">
+          <label class="catalog_button catalog_button-france" for="btn_france">Франция</label>
+          <input class="visually-hidden" value="" type="radio" id="btn_germany" name="cat_but">
+          <label class="catalog_button catalog_button-germany" for="btn_germany">Германия</label>
+          <input class="visually-hidden" value="" type="radio" id="btn_england" name="cat_but">
+          <label class="catalog_button catalog_button-england" for="btn_england">Англия</label>
+        <!-- </nav> -->
+        <div class="catalog_france" id="pic_france">
+          <article class="card">
+            <img class="picture_france-hanter" src="./images/france/hunter.png" alt="Картина Охота">
+            <p class="autor">Марсель Руссо</p>
+            <h3 class="pic_name">Охота Амура</h3>
+            <p class="make-up">Холст, масло (50х80)</p>
+            <p class="price">14 500 руб</p>
+            <button class="button card_button">В корзину</button>
+          </article>
+          <article class="card">
+            <img class="picture_france-hanter" src="./images/france/hunter.png" alt="Картина Охота">
+            <p class="autor">Марсель Руссо</p>
+            <h3 class="pic_name">Охота Амура</h3>
+            <p class="make-up">Холст, масло (50х80)</p>
+            <p class="price">14 500 руб</p>
+            <button class="button card_button">В корзину</button>
+          </article>
+          <article class="card">
+            <img class="picture_france-hanter" src="./images/france/hunter.png" alt="Картина Охота">
+            <p class="autor">Марсель Руссо</p>
+            <h3 class="pic_name">Охота Амура</h3>
+            <p class="make-up">Холст, масло (50х80)</p>
+            <p class="price">14 500 руб</p>
+            <button class="button card_button">В корзину</button>
+          </article>
+        </div>
+      </div> 
+    </section>
+  </main>
+</body>
+</html>
+
