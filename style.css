@@ -17,7 +17,7 @@ blockquote {
   padding: 0;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -26,7 +26,7 @@ blockquote {
   border: 0; 
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 body {
   inline-size: 1440px;
@@ -120,30 +120,24 @@ body {
   padding: 20px 60px;
 }
 
-.catalog {
+.catalogs {
   background-color: #F4F6F5;
 }
 
 .catalog_title {
   inline-size: 77.08%;
   margin: 0 auto;
-  /* display: grid;
- grid-template-columns: 1fr 1fr;
-
-  margin-block-end: 30px; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog_text {
+  margin-inline-end: 424px;
   font-family: Raleway, sans-serif;
   font-size: 40px;
   font-weight: 500;
   line-height: 44px;
   color: #2C2D35;
-}
-
-.catalog_menu {
-  display: flex;
-  gap: 30px;
 }
 
 .catalog_button {
@@ -159,23 +153,15 @@ body {
   background-color: #D4E8D9;
 }
 
-/* .catalog_button-france {
-  color: #F4F6F5;
-  background-color: #376B44;
+.catalog_button-france {
+  margin-inline-end: 32px;
 }
 
-.catalog_button-germany, .catalog_button-england {
-  color: #2C2D35;
-  background-color: #D4E8D9;
-} */
+.catalog_button-germany {
+  margin-inline-end: 27px;
+} 
 
-.catalog_france {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  inline-size: 77.08%;
-  margin: 0 auto;
-}
+/* Каталог*/
 
 .card {
   inline-size: 31.53%;
@@ -183,7 +169,7 @@ body {
   padding: 20px 20px 30px;
 }
 
-.picture_france-hanter {
+.picture {
   margin-block-end: 20px;
 }
 
@@ -227,23 +213,23 @@ body {
   padding: 21px 105px;
 }
 
-.visually-hidden {
-  display: none;
-}
-
-.catalog_france {
-  display: none;
-}
+/*конец каталога*/
 
 .visually-hidden:checked + .catalog_button {
   color: #F4F6F5;
   background-color: #376B44;
 }
 
-.catalog_title #btn_france:checked~#pic_france {
-  display: inline-flex;
+.catalog {
+  display: none;
 }
 
-.catalog_france {
-display: flex;
+.catalog_title #btn_france:checked~#pic_france,
+.catalog_title #btn_germany:checked~#pic_germany,
+.catalog_title #btn_england:checked~#pic_england {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  inline-size: 100%;
+  margin-block-start: 30px;
 }
